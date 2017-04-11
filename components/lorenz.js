@@ -84,22 +84,6 @@ class Lorenz extends ReglComponent {
       },
 
       uniforms: {
-        // view: ({tick}) => {
-        //   const t = 0.01 * tick;
-        //   const { cx, cy, cz, lx, ly, lz, ux, uy, uz } = this.props;
-        //   // console.log([30 * Math.cos(t), 2.5, 30 * Math.sin(t)]);
-        //   return mat4.lookAt([],
-        //     [lx, ly, lz],
-        //     // [30 * Math.cos(t), 2.5, 30 * Math.sin(t)],
-        //     [cx, cy, cz],
-        //     [ux, uy, uz])
-        // },
-        // projection: ({viewportWidth, viewportHeight}) =>
-        //   mat4.perspective([],
-        //     Math.PI / 4,
-        //     viewportWidth / viewportHeight,
-        //     0.01,
-        //     1000),
         time: ({tick}) => tick * 0.005
       },
 
@@ -117,10 +101,6 @@ class Lorenz extends ReglComponent {
         depth: 1,
         color: [1, 1, 1, 1]
       })
-      // x+=h*this.props.a*(y-x);
-      // y+=h*(x*(b-z)-y);
-      // z+=h*(x*y-c*z);
-      // pointBuffer.subdata([x, y, z], 4 * (tick % NUM_POINTS));
       this.camera(() => {
         drawParticles();
       })
@@ -158,15 +138,6 @@ Lorenz.defaultProps = {
   b: 28,
   c: 8/3,
   h: 0.008,
-  cx: -10,
-  cy: 8,
-  cz: 40,
-  lx: -66,
-  ly: 33,
-  lz: -1,
-  ux: 52,
-  uy: -26,
-  uz: 52,
   focused: false
 };
 

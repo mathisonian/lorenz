@@ -1,4 +1,4 @@
-[meta title:"Page Title" description:"Short description of your project" /]
+[meta title:"Lorenze Attractor" description:"A quick post on the Lorenz attractor" /]
 
 [IdyllLogo /]
 
@@ -14,7 +14,7 @@ equations:
 
 [var name:"a" value:10 /]
 [var name:"b" value:28 /]
-[var name:"c" value:`8/3` /]
+[var name:"c" value:`2.66` /]
 
 [equation display:`true` a:a domain:`{a: [-20, 20]}` interval:`{a: 0.5}` ]
 \frac{\delta x}{\delta t} = a (y - x)
@@ -27,20 +27,6 @@ equations:
 [equation display:`true` c:c domain:`{c: [-0, 20]}` interval:`{c: 0.05}`]
 \frac{\delta z}{\delta t} = xy - c z
 [/equation]
-
-[var name:"ux" value:57 /]
-[var name:"uy" value:`-33` /]
-[var name:"uz" value:17 /]
-
-[var name:"cx" value:14 /]
-[var name:"cy" value:`-8` /]
-[var name:"cz" value:17 /]
-
-[var name:"lx" value:`-38` /]
-[var name:"ly" value:17 /]
-[var name:"lz" value:57 /]
-
-
 
 [var name:"focused" value:`false` /]
 [fixed]
@@ -55,8 +41,10 @@ radically change the appearance of the attractor.
 
 The code that I used to create this was modified from [link text:"this gist" href:"https://gist.github.com/aemkei/1320178" /], which contains a
 basic implementation in 140 bytes. I modified it to use a WebGL particle system, and dynamically respond to updates of the constants. I also
-added in a [a href:"https://github.com/rreusser/regl-camera"]contralable camera[/a], so that you can click and drag on the rendered output to change your viewpoint.
+added in a [a href:"https://github.com/rreusser/regl-camera"]controllable camera[/a], so that you can click and drag on the rendered output to change your viewpoint
+(although the scrolling is a little wonky - sorry about that!).
 
+Here's the code I ended up with to make this Idyll component:
 
 [gist gist:"c2b342f0ce3a900673c8091bc2f74c3c" file:"lorenz.js" /]
 

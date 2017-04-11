@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Fira+Mono:400,500,700|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hed {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.byline {
+  font-family: 'Fira Mono', monospace;
+}
+
+.regl {
+  /*width: 100vw;
+  margin-left: calc((100vw - 600px) / -2 - 100px);*/
+}
+
+.fixed {
+  position: fixed;
+}
+.katex {
+  display: block;
+}
+
+@media (max-width: 1600px) {
+  .fixed {
+      width: calc((100vw - 600px - 160px) - 50px);
+  }
+}
+
+
+@media all and (max-width: 1200px) {
+  .fixed {
+    width: calc(100vw - (500px - 10px) - 50px);
+  }
+}

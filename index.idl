@@ -50,3 +50,6 @@ Here's the code I ended up with to make this Idyll component:
 
 Read more about Idyll at [link href:"https://idyll-lang.github.io/" text:"https://idyll-lang.github.io/" /],
 or [link href:"https://github.com/mathisonian/lorenz" text:"check out the source for this example" /].
+
+
+[analytics google:"UA-93774348-1" tag:"lorenz" /]

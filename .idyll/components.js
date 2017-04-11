@@ -6,5 +6,6 @@ module.exports = {
 "fixed": require('/Users/mathisonian/projects/idyll/examples/lorenz/node_modules/idyll/src/components/fixed'),
 "lorenz": require('/Users/mathisonian/projects/idyll/examples/lorenz/components/lorenz'),
 "boolean": require('/Users/mathisonian/projects/idyll/examples/lorenz/components/boolean'),
-"gist": require('/Users/mathisonian/projects/idyll/examples/lorenz/node_modules/idyll/src/components/gist')
+"gist": require('/Users/mathisonian/projects/idyll/examples/lorenz/node_modules/idyll/src/components/gist'),
+"analytics": require('/Users/mathisonian/projects/idyll/examples/lorenz/node_modules/idyll/src/components/analytics')
 } 
